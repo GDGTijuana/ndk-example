@@ -2,10 +2,6 @@
 #include <android/log.h>
 #include <GLES/gl.h>
 
-#define LOG_TAG "ndk_demo"
-#define LOGI(...)  __android_log_print(ANDROID_LOG_INFO,LOG_TAG,__VA_ARGS__)
-#define LOGE(...)  __android_log_print(ANDROID_LOG_ERROR,LOG_TAG,__VA_ARGS__)
-
 #define MOVE 5
 #define Q_SIZE 50
 #define R_SIZE 200
@@ -52,10 +48,6 @@ void Java_com_example_demo_DemoGLSurfaceView_nativeTouch(JNIEnv* env, jobject th
 		x_rect += 30;
 	else if(x < width / 2 && x_rect > -width)
 		x_rect -= 30;
-
-
-
-	LOGI("Touch pos: x=%d, y=%d", x, y);
 }
 
 /* Call to render the next GL frame */
