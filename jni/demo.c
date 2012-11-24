@@ -1,6 +1,6 @@
 #include <jni.h>
 #include <android/log.h>
-#include <gles/gl.h>
+#include <GLES/gl.h>
 
 #define LOG_TAG "ndk_demo"
 #define LOGI(...)  __android_log_print(ANDROID_LOG_INFO,LOG_TAG,__VA_ARGS__)
